@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../images/logo.svg" alt="">
+
+        <ul class="header-links">
+            <li>
+                <a href="#">Collections</a>
+            </li>
+            
+            <li>
+                <a href="#">Men</a>
+            </li>
+
+            <li>
+                <a href="#">Woman</a>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
+        <div class="header-action-buttons">
+            <button class="cart-button" onclick="toggleCart()">
+                <img src="../images/icon-cart.svg" alt="">
+                <div class="cart-has-items hidden"></div>
+            </button>
+            <img class="profile-photo" src="../images/image-avatar.png" alt="">
+
+            <div class="cart-box hidden">
+                <p class="empty-state-message">Cart Empty :(</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="product-image">
+            <img src="../images/image-product-1.jpg" alt="">
+        </div>
+
+        <div class="product-context">
+            <p class="product-brand">SNEAKER COMPANY</p>
+
+            <p class="product-name">Fall Limited Edition Sneakers</p>
+
+            <p class="product-description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            </p>
+
+            <div class="product-price-context">
+                <div class="top-row">
+                    <p class="product-price">
+                        $125.00
+                    </p>
+    
+                    <p class="discount-ribbon">
+                        50%
+                    </p>
+                </div>
+
+                <p class="product-original-price">
+                    $250.00
+                </p>
+            </div>
+
+            <div class="product-action-row">
+                <div class="product-count-input">
+                    <button onclick="decreaseProductCount()">-</button>
+                    <p class="product-count">0</p>
+                    <button onclick="increaseProductCount()">+</button>
+                </div>
+    
+                <button class="add-product-to-cart" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./splide.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
